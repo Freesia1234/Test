@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lab 12</title>
+</head>
+<body>
+     <script type="text/javascript">
+     	function toCentigrade(Fah) {
+     		var Cen=5/9*(Fah-32);
+     		document.write(Fah+" Fahrenheit is "+Cen+" Celsius <br/>");
+     	}
+     	function toFahrenheit(Cen) {
+     		var Fah=9/5*(Cen+32);
+     		document.write(Cen+" Centigrade is "+Fah+" Fahrenheit <br/>");
+     	}
+     	function convert(converter,Temperature)
+     	{
+     		converter(Temperature);
+     	}
+     	convert(toFahrenheit, 23);
+    	convert(toCentigrade, 75);
+     </script>
+</body>
+</html>
