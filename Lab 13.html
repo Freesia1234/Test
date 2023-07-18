@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lab 18</title>
+</head>
+<body>
+  <script type="text/javascript">
+  	var months=["January","February","March","April","May","June","July","August","September","October","November","December"];
+  	var dateNow=new Date();
+  	var dayNow=dateNow.getDate();
+  	var month=months[dateNow.getMonth()];
+  	var yearNow=dateNow.getFullYear();
+  	var daySuffix;
+  	switch(dayNow)
+  	{
+  	case 1:
+  	case 21:
+  	case 31:
+  		daySuffix="st";
+  		break;
+
+  	case 2:
+  	case 22:
+  		daySuffix="nd";
+  		break;
+  	case 3:
+  	case 23:
+  		daySuffix="rd";
+  		break;
+  	default:
+  		daySuffix="th";
+  		break;
+  	}
+  	document.write("It is the "+dayNow+daySuffix+" day in the month of "+month+" in the year "+yearNow)
+  </script>
+</body>
+</html>
