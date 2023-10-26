@@ -1,0 +1,15 @@
+/* Hero section background image */
+.hero {
+  height: 100vh;
+  background-image: url("Image/a.webp");
+  background-repeat: no-repeat;
+  background-position: 60% 0%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+/* Changing background color */
+body {
+  background: var(--bg-color) !important;
+}
